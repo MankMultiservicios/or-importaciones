@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | OR IMPORTACIONES GROUP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="CSS/img/logo.jpeg">
+  <link rel="shortcut icon" href="CSS/img/logo.jpeg">
+  <link rel="apple-touch-icon" href="CSS/img/logo.jpeg">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="white">
+    <div class="nav-wrapper container">
+
+      <!-- Logo + Texto -->
+      <a href="index.html" class="brand-logo black-text logo-container">
+        <img src="CSS/img/logo.jpeg" alt="Logo" class="logo-img">
+        <span>IMPORTACIONES GROUP</span>
+      </a>
+
+      <!-- Menú móvil -->
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+        <i class="material-icons black-text">menu</i>
+      </a>
+
+      <!-- Menú escritorio -->
+      <ul class="right hide-on-med-and-down menu-items">
+        <li><a href="index.html" class="black-text">INICIO</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="black-text">HERRAMIENTAS</a>
+          <ul class="dropdown-list">
+            <li><a href="#" class="black-text">Herramientas de corte</a></li>
+            <li><a href="#" class="black-text">Taladros</a></li>
+            <li><a href="#" class="black-text">Baterías</a></li>
+            <li><a href="#" class="black-text">Otras herramientas</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown dropdown-fit">
+          <a href="#" class="black-text">DRYWALL</a>
+          <ul class="dropdown-list">
+            <li><a href="#" class="black-text">Planchas</a></li>
+            <li><a href="#" class="black-text">Perfiles</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown dropdown-center dropdown-wide">
+          <a href="#" class="black-text">ACERO</a>
+          <ul class="dropdown-list">
+            <li><a href="#" class="black-text">Planchas</a></li>
+            <li><a href="#" class="black-text">Tubos</a></li>
+            <li><a href="#" class="black-text">Ángulos</a></li>
+            <li><a href="#" class="black-text">Estriados</a></li>
+          </ul>
+        </li>
+
+        <!-- Buscador -->
+        <li>
+          <div class="search-container">
+            <i class="material-icons search-icon">search</i>
+            <input type="text" placeholder="Buscar">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MENÚ MOBILE -->
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="#">HERRAMIENTAS</a></li>
+    <li><a href="#">DRYWALL</a></li>
+    <li><a href="#">ACERO</a></li>
+  </ul>
+
+  <!-- CONTACTO HERO -->
+  <section class="contact-hero">
+    <div class="contact-content container">
+      <div class="contact-left">
+        <h3>Contacta con nosotros</h3>
+        <form class="contact-form" id="contact-form">
+          <input type="text" class="contact-input" name="nombre" placeholder="Nombre o empresa" required>
+          <input type="tel" class="contact-input" name="celular" placeholder="Celular" required>
+          <input type="email" class="contact-input" name="correo" placeholder="Correo" required>
+          <textarea rows="5" name="mensaje" placeholder="Mensaje" required></textarea>
+          <button type="submit" class="btn blue darken-2 contact-btn" id="contact-submit" disabled>ENVIAR</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <img src="CSS/img/teleoperadora.jpg" alt="Teleoperadora">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer blue darken-4 compact-footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Redes -->
+        <div class="col s12 m4">
+          <h5>Redes Sociales</h5>
+          <ul class="social-list">
+            <li><a href="#" class="white-text"><i class="material-icons left">public</i>Facebook</a></li>
+            <li><a href="#" class="white-text"><i class="material-icons left">photo_camera</i>Instagram</a></li>
+            <li><a href="#" class="white-text"><i class="material-icons left">music_note</i>TikTok</a></li>
+          </ul>
+        </div>
+
+        <!-- Sobre nosotros -->
+        <div class="col s12 m4">
+          <h5>Sobre nosotros</h5>
+          <ul class="footer-list">
+            <li><a href="#" class="white-text">Misión y visión</a></li>
+            <li><a href="#" class="white-text">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col s12 m4 right-align">
+          <h5>Contáctanos</h5>
+          <p>
+            📞 900 000 000<br>
+            📍 Av. Javier Prado Este 4473, Santiago de Surco 15023<br>
+            🕒 Lunes - Viernes 8am - 6pm
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2026 OR Importaciones Group. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+  </script>
+
+  <script>
+    (function() {
+      var form = document.getElementById('contact-form');
+      var submitBtn = document.getElementById('contact-submit');
+      if (!form || !submitBtn) return;
+
+      function isFilled(input) {
+        return input.value && input.value.trim().length > 0;
+      }
+
+      function updateButton() {
+        var inputs = form.querySelectorAll('input[required], textarea[required]');
+        var allFilled = true;
+        inputs.forEach(function(el) {
+          if (!isFilled(el)) allFilled = false;
+        });
+        submitBtn.disabled = !allFilled;
+      }
+
+      form.addEventListener('input', updateButton);
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        updateButton();
+        if (submitBtn.disabled) return;
+
+        var nombre = form.querySelector('input[name="nombre"]').value.trim();
+        var celular = form.querySelector('input[name="celular"]').value.trim();
+        var correo = form.querySelector('input[name="correo"]').value.trim();
+        var mensaje = form.querySelector('textarea[name="mensaje"]').value.trim();
+
+        var text = [
+          'Contacto desde la web:',
+          'Nombre/Empresa: ' + nombre,
+          'Celular: ' + celular,
+          'Correo: ' + correo,
+          'Mensaje: ' + mensaje
+        ].join('\n');
+
+        var url = 'https://wa.me/51966967783?text=' + encodeURIComponent(text);
+        window.open(url, '_blank');
+      });
+
+      updateButton();
+    })();
+  </script>
+
+  <a class="whatsapp-float" href="https://wa.me/51966967783" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="CSS/img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
